@@ -33,7 +33,7 @@ dispatch(GetTasks())
 
 export const GetTasks=createAsyncThunk('/GetallTasks',async(data,{rejectWithValue})=>{
     try {
-        const res=await axios.get("http://localhost:8081/api/task/get",{
+        const res=await axios.get("https://backend-f3.onrender.com/api/task/get",{
             headers:{
                 token:localStorage.getItem('token')
             }
